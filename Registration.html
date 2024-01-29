@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="week1.css">
+    <style>
+        fieldset
+        {
+            margin-left: 300px;
+            margin-right: 400px;
+            /* background-color: grey; */
+            margin-top: 50px;
+        }
+        label
+        {
+            width: 80px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body text="white" onload="document.one.name1.focus()">
+    <form action="" class="one" name="one">
+        <fieldset style="background-color:lightslategray" class="z">
+        <h1 align="center">REGISTRATION</h1>
+        <!-- <legend> <h1><B>REGISTRATION</B></h1></legend> -->
+        <label>Name</label>
+        <input type="text" value="" placeholder="Enter name" name="name1"> <br><br>
+        <label for="">Password</label> 
+        <input type="password" placeholder="Enter password"> <br> <br>
+        <label for="">Confirm Password</label> 
+        <input type="password" placeholder="Confirm password"> <br> <br>
+        <label>Email</label>
+        <input type="text" placeholder="Enter mail"> <br> <br>
+        <label>Mobile No.</label>
+        <input type="text" placeholder="Enter Mobile"> <br> <br>
+        <label>DOB</label>
+        <input type="date" placeholder=""> <br> <br>
+        <label>Gender</label>
+        <input type="radio" value="Male" name="1">Male
+        <input type="radio" value="Female" name="1">Female <br><br>
+        <input class="sub" type="button" value="SUBMIT" onclick="return myfun(document.one.name1,5)"> <input type="checkbox">Accept terms and conditions <br><br>
+        <!-- <a href="out.html"></a> -->
+       </fieldset>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
